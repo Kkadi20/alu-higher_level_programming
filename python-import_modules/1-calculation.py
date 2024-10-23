@@ -16,4 +16,3 @@ print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
 # Ensure the code is not executed when imported
 if __name__ == "__main__":
     pass
-
