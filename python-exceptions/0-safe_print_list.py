@@ -9,4 +9,3 @@ def safe_print_list(my_list=[], x=0):
             break
     print()  # Newline after printing all elements
     return count
-
