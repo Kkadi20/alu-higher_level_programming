@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-Deletes all State objects with a name containing the letter a.
+Deletes all State objects with a name containing the letter a (case-insensitive).
 '''
 
 from sys import argv
@@ -17,8 +17,8 @@ if __name__ == '__main__':
     InstanceSession = sessionmaker(bind=engine)
     session = InstanceSession()
 
-    # Query states where the name contains 'a'
-    states = session.query(State).filter(State.name.contains('a')).all()
+    # Query states where the name contains 'a' (case-insensitive)
+    states = session.query(State).filter(State.name.ilike('%a%')).all()
 
     # Delete the selected states
     for state in states:
