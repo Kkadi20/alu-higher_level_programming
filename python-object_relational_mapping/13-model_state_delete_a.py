@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''
-Deletes all State objects with a name containing the letter a 
-(case-insensitive).
+Deletes all State objects with a name containing the letter 'a'.
+The search is case-insensitive.
 '''
 
 from sys import argv
